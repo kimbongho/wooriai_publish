@@ -1,0 +1,5 @@
+**/*.style.tsx
+README.md
+docker/
+next.config.mjs
+.next

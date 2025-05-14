@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+      "es2017"
+    ],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": false,
+    "incremental": true,
+    "target": "es6",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "noImplicitAny": false,
+    "types": [],
+    "plugins": [
+      {
+        "name": "next"
+      },
+      {
+        "name": "typescript-styled-plugin",
+        "validate": false,
+        "lint": {
+          "vendorPrefix": "error",
+          "zeroUnits": "ignore"
+        }
+      }
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/shared/@types",
+      "env.d.ts"
+    ],
+    "strictNullChecks": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/shared/@types/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js"
+  ]
+}
