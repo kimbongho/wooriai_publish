@@ -162,6 +162,10 @@ const _ = () => {
 
 								<Info />
 
+								<div className='no-data'>
+									<p className='txt'>분석 결과가 없습니다.</p>
+								</div>
+
 								<div className='bi-chart-wrap'>
 									<div className='chart-box'>
 										<div className='report-main-text'>

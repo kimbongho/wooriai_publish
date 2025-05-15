@@ -1,9 +1,10 @@
 import styled from '@emotion/styled'
-import { MX } from '@/shared'
 
 export const Chart = styled.div`
+	position:relative;
+	&:after{content:'';display:block;position:absolute;bottom:0;left:0;width:100%;background:#fff;height:7.3rem;}
 	.chart-draw{
-		overflow:hidden;position:relative;
+		position:relative;
 		background: url("data:image/svg+xml,%3Csvg width='285' height='137' viewBox='0 0 285 137' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 1L284.702 1.00002' stroke='%23ECEEF5' stroke-dasharray='2 2'/%3E%3Cpath d='M0 35L284.702 35' stroke='%23ECEEF5' stroke-dasharray='2 2'/%3E%3Cpath d='M1.12354 69H283.577' stroke='%23ECEEF5' stroke-dasharray='2 2'/%3E%3Cpath d='M0.87207 103H283.829' stroke='%23ECEEF5' stroke-dasharray='2 2'/%3E%3C/svg%3E%0A") no-repeat 50% 100% !important;
 		background-size:auto 100% !important;
 		padding:0 1rem;
@@ -14,8 +15,8 @@ export const Chart = styled.div`
 		.bg{
 			img{width:100%;height:auto;}
 		}
-		.index{position:absolute;height:100%;
-			&:before{content:'';display:block; height:100%;position:absolute;top:10%;left:50%;transform:translateX(-50%);
+		.index{position:absolute;bottom:0;
+			&:before{content:'';display:block; height:100%;position:absolute;top:1.6rem;left:50%;transform:translateX(-50%);
 			border-left:0.2rem dashed #4252E2;
 			}
 			
@@ -59,9 +60,10 @@ export const Chart = styled.div`
 			}
 		}
 	}
-	.x-axis{position:relative; width:100%;text-align:center;font-size:1.2rem;font-weight:500; color:#383838;padding-top:0.8rem;margin-top:0.4rem;
+	.x-axis{position:relative; width:100%;text-align:center;font-size:1.2rem;font-weight:500; color:#383838;padding-top:0.8rem;margin-top:0.4rem;z-index:1;
 		&:before{content:'';display:block;position:absolute;top:0;left:50%;width:0.4rem;height:0.4rem;background:#383838;border-radius:100%;transform:translateX(-50%);}
 	}
+		.chart-legend{position:relative;z-index:1;}
 
 `
 export default Chart

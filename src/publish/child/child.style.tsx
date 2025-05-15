@@ -57,6 +57,8 @@ export const Contents = styled.div`
 			.caution i { background: #ECAB2C; }
 			.normal i { background: #2F5ED7; }
 		}
+
+		.no-data{padding: 6rem 0;}
 	}
 
 	.bi-chart-wrap{
