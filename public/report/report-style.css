@@ -56,7 +56,7 @@
 	unicode-range: U+0030-0039, U+0041-005A, U+0061-007A;
 	src: url(../fonts/Montserrat-Light.woff) format('woff');
 }
-		
+
 
 /* ========== reset ========== */
 *{margin:0;padding:0;border:none;word-break:break-all;box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-overflow-scrolling:touch;-webkit-hyphens:auto;hyphens:auto;vertical-align:baseline;font-size:inherit;line-height:inherit;color:inherit;font-family:inherit;font-weight:inherit;letter-spacing: inherit;}
@@ -137,12 +137,12 @@ br, hr{border:none;line-height:inherit;}
 .list-dot .dot:before{content:'';display:block;width:2px;height:2px;border-radius:100%;background:#383838;position:absolute;top:5px;left:0;}
 
 [class*=ico-]{display:inline-block;background-position:0 0;background-size:auto 100%;background-repeat:no-repeat;}
-.ico-character-rabbit { width: 125px; height: 149px; background-image: url('../images/ico-character-rabbit.svg')}
-.ico-character-koala { width: 111px; height: 123px; background-image: url('../images/ico-character-koala.svg')}
-.ico-character-sloth { width: 126px; height: 88px; background-image: url('../images/ico-character-sloth.svg')}
-.ico-character-beaver { width: 90px; height: 127px; background-image: url('../images/ico-character-beaver.svg')}
-.ico-character-alpaca { width: 98px; height: 157px; background-image: url('../images/ico-character-alpaca.svg')}
-.ico-character-dolphin { width: 136px; height: 125px; background-image: url('../images/ico-character-dolphin.svg')}
+.ico-character-rabbit { width: 125px; height: 149px; background-image: url('../images/ico-character-rabbit.png')}
+.ico-character-koala { width: 111px; height: 123px; background-image: url('../images/ico-character-koala.png')}
+.ico-character-sloth { width: 126px; height: 88px; background-image: url('../images/ico-character-sloth.png')}
+.ico-character-beaver { width: 90px; height: 127px; background-image: url('../images/ico-character-beaver.png')}
+.ico-character-alpaca { width: 98px; height: 157px; background-image: url('../images/ico-character-alpaca.png')}
+.ico-character-dolphin { width: 136px; height: 125px; background-image: url('../images/ico-character-dolphin.png')}
 
 * + .chart-area{margin-top:20px;}
 .chart-area{padding:0 20px;}
